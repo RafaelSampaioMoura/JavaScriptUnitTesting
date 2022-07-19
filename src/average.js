@@ -11,9 +11,7 @@
     - average([1, '2']) // Retorno: undefined;
 */
 
-const isEmpty = (arr) => {
-  return arr.length === 0;
-};
+const isEmpty = (arr) => arr.length === 0;
 
 const hasNoNumber = (arr) => {
   for (let i = 0; i < arr.length; i += 1) {
@@ -27,10 +25,8 @@ const hasNoNumber = (arr) => {
 const average = (arr) => {
   if (isEmpty(arr) || hasNoNumber(arr)) {
     return undefined;
-  } else {
-    return Math.round(arr.reduce((soma, a) => soma + a, 0) / arr.length);
   }
+  return Math.round(arr.reduce((soma, a) => soma + a, 0) / arr.length);
 };
-
 
 module.exports = average;
