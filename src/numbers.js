@@ -17,4 +17,8 @@ const numbers = (myArray) => {
   return true;
 };
 
+const array = [1, 2, 3];
+const array2 = [1, '2', 3];
+console.log(numbers(array));
+console.log(numbers(array2));
 module.exports = numbers;
