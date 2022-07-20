@@ -171,7 +171,7 @@ describe('10 - Implemente os casos de teste e a função `createMenu`', () => {
     objetoRetornado6.order('coxinha');
     objetoRetornado6.order('agua');
     objetoRetornado6.order('coxinha');
-    expect(objetoRetornado6.pay()).toBe(12.87);
+    expect(objetoRetornado6.pay()).toBeCloseTo(12.87, 4);
     // Agora faça o PASSO 4 no arquivo `src/restaurant.js`.
   });
 });
