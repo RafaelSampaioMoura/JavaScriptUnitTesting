@@ -101,13 +101,13 @@ const createMenu = (obj) => {
     order: (comida) => restaurant.consumption.push(comida),
     pay: () => {
       let fullPrice = 0;
-      const foods = Object.keys(restaurant.fetchMenu()['food']);
-      const drinks = Object.keys(restaurant.fetchMenu()['drink']);
+      const foods = Object.keys(restaurant.fetchMenu().food);
+      const drinks = Object.keys(restaurant.fetchMenu().drink);
       for (let item of restaurant.consumption) {
         if (foods.includes(item)) {
-          fullPrice += restaurant.fetchMenu()['food'][item];
+          fullPrice += restaurant.fetchMenu().food[item];
         } else if (drinks.includes(item)) {
-          fullPrice += restaurant.fetchMenu()['drink'][item];
+          fullPrice += restaurant.fetchMenu().drink[item];
         }
       }
       return fullPrice * 1.1;
