@@ -14,7 +14,7 @@ const productDetails = require('../src/productDetails');
     {
       name: 'Alcool gel'
       details: {
-        productId: 'Alcool gel123'
+        'productId': 'Alcool gel123'
       }
     },
     {
@@ -45,5 +45,7 @@ describe('6 - Implemente os casos de teste para a função `productDetails`', ()
     // Teste se quando passado parâmetros diferentes entre si, os dois objetos também são diferentes entre si.
     expect(productDetails('Alcool gel')).not.toEqual(productDetails('Máscara'));
     // Teste se os dois productIds terminam com 123.
+    expect(productDetails('Alcool gel')[0]['details']['productId'].endsWith('123')).toBeTruthy();
+    expect(productDetails('Máscara')[0]['details']['productId'].endsWith('123')).toBeTruthy();
   });
 });
