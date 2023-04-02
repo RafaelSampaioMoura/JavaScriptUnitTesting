@@ -27,7 +27,7 @@ mkdir sampaio-projects
 
 ```
 cd sampaio-projects
-git clone git@github.com:RafaelSampaioMoura/BasicJavaScriptFunctions.git
+git clone git@git@github.com:RafaelSampaioMoura/JavaScriptUnitTesting.git
 ```
 
 <li>Then execute the file you want with the "node" command</li>:
@@ -69,7 +69,7 @@ mkdir sampaio-projects
 
 ```
 cd sampaio-projects
-git clone git@github.com:RafaelSampaioMoura/BasicJavaScriptFunctions.git
+git clone git@github.com:RafaelSampaioMoura/JavaScriptUnitTesting.git
 ```
 
 <li>Execute o arquivo desejado com o comando "node":</li>
